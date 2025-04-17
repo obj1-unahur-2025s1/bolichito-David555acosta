@@ -9,32 +9,15 @@ object bolichitoX {
     method vidriera(objetoY) {vidriera = objetoY}
 
     method sonBrillantes() {
-        var estado = false
-        if (mostrador.esBrillante() and vidriera.esBrillante()) {
-            estado = true
-        }
-        return estado
+      return mostrador.esBrillante() and vidriera.esBrillante()
     }
 
-    method mostrarObjetos() {
-        return mostrador
-    }
     method sonMonoCromaticos() {
-      var estado = false
-
-      if(mostrador.color() == vidriera.color()) {
-        estado = true
-      }
-      return estado
+      return mostrador.color() == vidriera.color()
     }
 
     method estaEquilibrado() {
-      var estado = false
-
-      if(mostrador.peso() > vidriera.peso()) {
-        estado = true
-      }
-      return estado
+      return mostrador.peso() > vidriera.peso()
     }
 
     /*
@@ -44,10 +27,6 @@ object bolichitoX {
     */
 
     method tieneObjetoDeColor(colorX) {
-        var estado = false
-        if(mostrador.color() == colorX || vidriera.color() == colorX) {
-            estado = true
-        }
-        return estado
+      return mostrador.color() == colorX || vidriera.color() == colorX
     }
 }

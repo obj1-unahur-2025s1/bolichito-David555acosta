@@ -21,7 +21,7 @@ object cobre {
 }
 
 
-object vidro {
+object vidrio {
   method esBrillante() = true 
 }
 
@@ -53,7 +53,7 @@ object biblioteca {
 object munieco {
   var peso = 0
   method color() = celeste
-  method material() = vidro
+  method material() = vidrio
   method peso(pesoX) = {peso = pesoX}  
 }
 
